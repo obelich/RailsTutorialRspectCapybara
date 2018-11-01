@@ -1,24 +1,19 @@
 # README
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+Despues de generar la aplicacion agregamos lo siguiente en el Gemfile
+Generamos un grupo especifico de `:test`
+```
+group :test do
+  gem 'capybara', '3.10.0'
+end
+```
 
-Things you may want to cover:
+y en uno de los grupos en development
 
-* Ruby version
+```
+gem 'rspec-rails', '3.8.1'
+```
 
-* System dependencies
+despues de ejecutar el `bundle install` ejecutamos
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
+` rails g rspec:install` despues de que termine este comando ejecutamos `bundle binstubs rspec-core`
