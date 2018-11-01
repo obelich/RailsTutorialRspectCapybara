@@ -17,3 +17,33 @@ gem 'rspec-rails', '3.8.1'
 despues de ejecutar el `bundle install` ejecutamos
 
 ` rails g rspec:install` despues de que termine este comando ejecutamos `bundle binstubs rspec-core`
+
+# Hacer una prueba Rspec
+
+para hacer una prueba primero generamos una carpeta dentro de `spec/[nombre]` por ejemplo features
+
+## archivos de prueba
+
+Una vez creada la carpeta dentro de dicha carpeta generamos un archivo con el nombre de la prueba por ejemplo
+`creating_article_spec.rb` es importante que termine con _spec y la extencion sea `.rb`
+
+### Estructura basica
+
+```
+require "rails_helper"
+
+RSpec.feature "Descripcion general de la prueba" do
+
+  scenario "Descripcion del escenario de la prueba" do
+        # Codigo de la prubea
+  end
+
+end
+```
+
+# Ejecutar prueba
+
+Para ejecutar todas las prubeas en la consola ejecutas `rspec` si solo queremos ejecutar un archivo de prueba en especifico se ejecuta 
+
+`rspec spec/[NombreCarpeta]/[NombreArchivo]_spec.rb`
+
