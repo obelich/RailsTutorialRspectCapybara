@@ -1,0 +1,32 @@
+
+<div class="column is-one-quarter">
+  <h3 class="has-text-centered">Adding New Article</h3>
+
+  <%= form_for(@article,  role: "form") do |form| %>
+
+    <div class="field">
+      <%= form.label :title, class: "label" %>
+      <div class="control">
+        <%= form.text_field :title, class: "input", placeholder: "Title of article", autofocus: true %>
+      </div>
+    </div>
+
+    <div class="field">
+      <%= form.label :body, class: "label" %>
+      <div class="control">
+        <%= form.text_area :body, class: "textarea", rows: 10, placeholder: "Body of article" %>
+      </div>
+    </div>
+
+      <div class="field is-grouped">
+        <p class="control">
+          <%= form.submit class: 'button is-primary' %>
+
+        </p>
+      </div>
+    </div>
+
+
+
+    <% end %>
+</div>

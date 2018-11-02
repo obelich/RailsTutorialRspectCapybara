@@ -7,9 +7,20 @@
 
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+
   </head>
 
   <body>
-    <%= yield %>
+  <% flash.each do |key, message| %>
+    <div  class="notification is-<%= key == 'notice' ? 'success' : 'danger' %>">
+      <button class="delete"></button>
+      <%= message %>
+
+    </div>
+  <% end %>
+    <div class="container is-centered">
+      <%= yield %>
+
+    </div>
   </body>
 </html>
