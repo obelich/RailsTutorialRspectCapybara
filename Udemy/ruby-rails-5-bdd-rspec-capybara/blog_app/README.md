@@ -12,12 +12,19 @@ y en uno de los grupos en development
 
 ```
 gem 'rspec-rails', '3.8.1'
+gem 'guard'
+gem 'guard-rspec'
+gem 'guard-cucumber'
 ```
 
 despues de ejecutar el `bundle install` ejecutamos
 
 ` rails g rspec:install` despues de que termine este comando ejecutamos `bundle binstubs rspec-core`
 
+## Guard
+Para inicianlizar Guard ejecutamos
+
+`bundle binstubs guard` despues ejecutas `guard init`
 # Hacer una prueba Rspec
 
 para hacer una prueba primero generamos una carpeta dentro de `spec/[nombre]` por ejemplo features
