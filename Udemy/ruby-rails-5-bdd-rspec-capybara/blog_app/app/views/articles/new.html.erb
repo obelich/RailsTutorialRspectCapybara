@@ -3,6 +3,16 @@
   <h3 class="has-text-centered">Adding New Article</h3>
 
   <%= form_for(@article,  role: "form") do |form| %>
+    <% if @article.errors.any? %>
+      <ul>
+        <% @article.errors.full_messages.each do  |msg|  %>
+          <li>
+            <%= msg %>
+          </li>
+        <% end %>
+      </ul>
+    <% end %>
+
 
     <div class="field">
       <%= form.label :title, class: "label" %>
