@@ -4,33 +4,40 @@
 
   <%= form_for(@article,  role: "form") do |form| %>
     <% if @article.errors.any? %>
-      <ul>
-        <% @article.errors.full_messages.each do  |msg|  %>
-          <li>
-            <%= msg %>
-          </li>
-        <% end %>
-      </ul>
-    <% end %>
+      <div class="alert alert-danger col-md-offset-1">
+        <div class="panel-heading">
+          <h2 class="panel-title">
+            <%= pluralize(@article.errors.count, "error") %>
+            prohibited this article from being <saved></saved>
+          </h2>
+          <div class="pabel-body">
+            <ul>
+              <% @article.errors.full_messages.each do  |msg|  %>
+                <li>
+                  <%= msg %>
+                </li>
+              <% end %>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+<% end %>
 
 
-    <div class="field">
+    <div class="form-group">
       <%= form.label :title, class: "label" %>
-      <div class="control">
-        <%= form.text_field :title, class: "input", placeholder: "Title of article", autofocus: true %>
-      </div>
+        <%= form.text_field :title, class: "form-control", placeholder: "Title of article", autofocus: true %>
     </div>
 
-    <div class="field">
+    <div class="form-group">
       <%= form.label :body, class: "label" %>
-      <div class="control">
-        <%= form.text_area :body, class: "textarea", rows: 10, placeholder: "Body of article" %>
-      </div>
+        <%= form.text_area :body, class: "form-control", rows: 10, placeholder: "Body of article" %>
     </div>
 
-      <div class="field is-grouped">
-        <p class="control">
-          <%= form.submit class: 'button is-primary' %>
+      <div class="form-group row">
+        <p class="col-sm-10">
+          <%= form.submit class: 'btn btn-primary' %>
 
         </p>
       </div>
