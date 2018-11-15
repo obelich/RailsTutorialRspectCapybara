@@ -3,8 +3,9 @@ require "rails_helper"
 RSpec.feature "Listing Articles" do
 
   before do #Esto funciona para hacer algo antes de procesar el testing
-    @article1 = Article.create(title: "The first article", body: "Lorem ipsum one")
-    @article2 = Article.create(title: "The second article", body: "Lorem ipsum two")
+    @user = User.create!(email: 'user@example.com', password: 'password')
+    @article1 = Article.create(title: "The first article", body: "Lorem ipsum one", user: @user)
+    @article2 = Article.create(title: "The second article", body: "Lorem ipsum two", user: @user)
 
   end
 

@@ -18,10 +18,11 @@ require "rails_helper"
 
     expect(Article.last.user).to eq(@user)
     expect(page).to have_content("Article has been created")
+    expect(page).to have_content("Created by: #{@user.email}")
     expect(page.current_path).to eq(articles_path)
   end
 
-  scenario "A user fao;s tp create anew article" do
+  scenario "A user faile to create new article" do
     visit "/"
 
     click_link "New Article"
