@@ -4,6 +4,9 @@ RSpec.feature "Deleting an article" do
 
   before do
     @article = Article.create(title: "The first article", body: "Lorem ipsum one")
+    @user = User.create!(email: 'user@example.com', password: 'password')
+    login_as(@user)
+
   end
 
   scenario "A user deletes an article"  do
