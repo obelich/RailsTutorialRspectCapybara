@@ -26,7 +26,6 @@ RSpec.feature "Listing Articles" do
     login_as(@user)
     visit "/"
 
-
     expect(page).to have_content(@article1.title)
     expect(page).to have_content(@article1.body)
     expect(page).to have_content(@article2.title)
