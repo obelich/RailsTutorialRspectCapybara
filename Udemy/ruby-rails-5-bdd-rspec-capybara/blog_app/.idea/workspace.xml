@@ -50,7 +50,7 @@
           <entry key="erb" value="21" />
           <entry key="js" value="2" />
           <entry key="md" value="2" />
-          <entry key="rb" value="55" />
+          <entry key="rb" value="56" />
           <entry key="scss" value="4" />
         </counts>
       </usages-collector>
@@ -60,7 +60,7 @@
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="1385" />
           <entry key="RHTML" value="2076" />
-          <entry key="Ruby" value="4886" />
+          <entry key="Ruby" value="5582" />
           <entry key="SCSS" value="1" />
         </counts>
       </usages-collector>
@@ -71,7 +71,7 @@
           <entry key="JavaScript" value="2" />
           <entry key="Markdown" value="2" />
           <entry key="RHTML" value="21" />
-          <entry key="Ruby" value="61" />
+          <entry key="Ruby" value="62" />
           <entry key="SCSS" value="4" />
         </counts>
       </usages-collector>
@@ -82,7 +82,7 @@
           <entry key="erb" value="2076" />
           <entry key="js" value="2" />
           <entry key="md" value="1385" />
-          <entry key="rb" value="4653" />
+          <entry key="rb" value="5349" />
           <entry key="scss" value="1" />
         </counts>
       </usages-collector>
@@ -127,11 +127,20 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/spec/features/show_article_spec.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="476">
-              <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+            <state relative-caret-position="115">
+              <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="73" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/spec/requests/articles_spec.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="62">
+              <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
             </state>
           </provider>
         </entry>
@@ -139,8 +148,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="299">
-              <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
+            <state relative-caret-position="92">
+              <caret line="4" selection-start-line="4" selection-end-line="4" />
             </state>
           </provider>
         </entry>
@@ -186,7 +195,6 @@
         <option value="$PROJECT_DIR$/app/assets/stylesheets/custom.css.scss" />
         <option value="$PROJECT_DIR$/app/assets/javascripts/application.js" />
         <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/spec/requests/articles_spec.rb" />
         <option value="$PROJECT_DIR$/app/views/articles/_form.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/new.html.erb" />
         <option value="$PROJECT_DIR$/app/views/articles/edit.html.erb" />
@@ -201,7 +209,6 @@
         <option value="$PROJECT_DIR$/spec/rails_helper.rb" />
         <option value="$PROJECT_DIR$/app/models/user.rb" />
         <option value="$PROJECT_DIR$/app/models/article.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
         <option value="$PROJECT_DIR$/spec/features/creating_article_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/editing_article_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/delete_article_spec.rb" />
@@ -209,6 +216,8 @@
         <option value="$PROJECT_DIR$/app/views/articles/show.html.erb" />
         <option value="$PROJECT_DIR$/spec/features/listing_article_spec.rb" />
         <option value="$PROJECT_DIR$/spec/features/show_article_spec.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/articles_controller.rb" />
+        <option value="$PROJECT_DIR$/spec/requests/articles_spec.rb" />
       </list>
     </option>
   </component>
@@ -302,6 +311,12 @@
               <item name="blog_app" type="462c0819:PsiDirectoryNode" />
               <item name="spec" type="462c0819:PsiDirectoryNode" />
               <item name="features" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="blog_app" type="b2602c69:ProjectViewProjectNode" />
+              <item name="blog_app" type="462c0819:PsiDirectoryNode" />
+              <item name="spec" type="462c0819:PsiDirectoryNode" />
+              <item name="requests" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -434,12 +449,12 @@
       <workItem from="1542217675049" duration="12180000" />
       <workItem from="1542312071268" duration="5491000" />
       <workItem from="1542392150747" duration="12533000" />
-      <workItem from="1542646176487" duration="1526000" />
+      <workItem from="1542646176487" duration="5520000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="126373000" />
+    <option name="totallyTimeSpent" value="130367000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -544,13 +559,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="230">
           <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/spec/requests/articles_spec.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret lean-forward="true" selection-end-line="29" selection-end-column="3" />
         </state>
       </provider>
     </entry>
@@ -695,13 +703,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="32" selection-start-line="13" selection-start-column="32" selection-end-line="13" selection-end-column="32" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/creating_article_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="115">
@@ -718,8 +719,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/spec/features/show_article_spec.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="45" column="17" selection-start-line="45" selection-start-column="17" selection-end-line="45" selection-end-column="17" />
+        <state relative-caret-position="115">
+          <caret line="5" column="4" selection-start-line="5" selection-start-column="4" selection-end-line="5" selection-end-column="73" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/articles_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="92">
+          <caret line="4" selection-start-line="4" selection-end-line="4" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/spec/requests/articles_spec.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="62">
+          <caret line="24" column="39" selection-start-line="24" selection-start-column="39" selection-end-line="24" selection-end-column="39" />
         </state>
       </provider>
     </entry>
