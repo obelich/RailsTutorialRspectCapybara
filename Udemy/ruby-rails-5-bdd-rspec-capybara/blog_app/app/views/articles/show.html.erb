@@ -38,7 +38,7 @@
       <% end %>
 
       <div class="form-group">
-        <%= form.label :body, class: "label" %>
+        <%= form.label :body,  "New Comment", class: "label" %>
         <%= form.text_area :body, class: "form-control", rows: 10, placeholder: "Body of article" %>
       </div>
 
@@ -50,6 +50,39 @@
       </div>
 
     <% end %>
+  </div>
+
+  <div class="col-md-12">
+    <header>
+      <h2>Comments</h2>
+    </header>
+
+    <div class="col-md-10">
+      <% if @article.comments.any? %>
+        <table class="table">
+          <thead>
+          <tr>
+            <th>Comentario</th>
+            <th>Fecha</th>
+          </tr>
+          </thead>
+          <tbody>
+          <% @article.comments.each do |comment|  %>
+
+            <tr>
+              <td><%= comment.body %></td>
+              <td> <%= comment.created_at %> ago by <%= comment.user.email %></td>
+
+            </tr>
+          <% end %>
+          </tbody>
+        </table>
+      <% else %>
+        There are no comments to show.
+      <% end %>
+
+
+    </div>
   </div>
 
 </article>
