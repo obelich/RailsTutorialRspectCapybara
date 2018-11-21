@@ -67,14 +67,15 @@
           </tr>
           </thead>
           <tbody>
-          <% @article.comments.each do |comment|  %>
+            <% persisted_comments(@article.comments).each do |comment|  %>
+              <% if comment.id != nil %>
+                <tr>
+                  <td><%= comment.body %></td>
+                  <td> <%= time_ago_in_words(comment.created_at) %> ago by <%= comment.user.email %></td>
 
-            <tr>
-              <td><%= comment.body %></td>
-              <td> <%= comment.created_at %> ago by <%= comment.user.email %></td>
-
-            </tr>
-          <% end %>
+                </tr>
+              <% end %>
+            <% end %>
           </tbody>
         </table>
       <% else %>
